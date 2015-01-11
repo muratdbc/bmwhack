@@ -28,14 +28,14 @@ gem 'spring',        group: :development
 gem 'httparty'
 gem 'dotenv-rails', :groups => [:development, :test]
 
+
 gem 'whenever', :require => false
 
 
 gem 'twilio-ruby'
 
-gem 'whenever', :require => false
 
->>>>>>> cron_job
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
