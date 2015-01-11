@@ -1,4 +1,8 @@
 class EventsController < ApplicationController
+  def new
+    render 'welcome/addreq'
+  end
+
   def create
     event = Event.new(event_params)
     event.save

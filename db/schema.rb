@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20150111195051) do
   end
 
   create_table "notifications", force: true do |t|
-    t.string   "type"
+    t.string   "method"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
