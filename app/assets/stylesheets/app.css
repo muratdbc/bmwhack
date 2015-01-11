@@ -14,5 +14,5 @@
     .my-breakpoint.ui-grid-b .ui-block-b,
     .my-breakpoint.ui-grid-b .ui-block-c { width: 24.925%; }
   }
-  [data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=page]{height: 100% !important; position:relative !important;}
 [data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;}
