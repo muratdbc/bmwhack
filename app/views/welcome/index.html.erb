@@ -3,7 +3,7 @@
   </div>
 <div class="container">
   <div class="col-sm-10">
-    <label for="select-choice-0" class="select">Select Your Req:</label>
+    <label for="select-choice-0" class="select">What would you like to monitor?</label>
      <select name="select-choice-0" id="select-choice-0">
               <option value="speedlimit">Speed Limit Exceeded?</option>
               <option value="textdrive">Texting and Driving</option>
@@ -11,6 +11,8 @@
               <option value="overcap">Over Capacity</option>
               <option value="erratica">Erratic Accelaration</option>
               <option value="batterylow">Battery Low</option>
+              <option value="GeoFencing">Outside Geo Fencing</option>
+              <option value="GeoFencing">Outside Authorized Usage Time</option>
     </select>
   </div>
   <div >
@@ -18,13 +20,11 @@
       <a href="addreq" class="ui-btn ui-btn-inline">Add Now</a>
     </div>
   </div>
+</div>
    <div data-role="footer">
-                <div data-role="navbar" >
-                      <ul>
-                            <li><a href="#" data-icon="grid">Summary</a></li>
-                            <li><a href="#" data-icon="star" class="ui-btn-active">Favs</a></li>
-                            <li><a href="#" data-icon="gear">Setup</a></li>
-                      </ul>
-                </div><!-- /navbar -->
-          </div><!-- /footer -->
+  <a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Profile</a>
+  <a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">Summary</a>
+  <a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">New</a>
+  <a href="#" class="ui-btn ui-icon-plus ui-btn-icon-left">About</a>
+</div>
 </div>

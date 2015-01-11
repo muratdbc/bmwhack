@@ -4,9 +4,9 @@
 # http://en.wikipedia.org/wiki/Cron
 
 
-every '* * * * *' do
-  runner "Ping.check_pings", environment => "development"
-end
+# every '* * * * *' do
+#   runner "Ping.check_pings", environment => "development"
+# end
 
 # Example:
 #
