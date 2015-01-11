@@ -27,7 +27,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'httparty'
 gem 'dotenv-rails', :groups => [:development, :test]
+
+gem 'twilio-ruby'
+
 gem 'whenever', :require => false
+
+gem 'whenever', :require => false
+>>>>>>> 9319f86c8561346b9a2d72799a6623738057dccc
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
