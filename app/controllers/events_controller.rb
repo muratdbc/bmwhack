@@ -6,8 +6,10 @@ class EventsController < ApplicationController
   def create
     event = Event.new(event_params)
     event.save
+    p "!" * 50
+    p event.max_speed
     #start chron job
-    #redirect to dashboard
+    redirect_to '/'
   end
 
   private

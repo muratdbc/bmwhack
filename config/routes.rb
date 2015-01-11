@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  resources :events, :only => [:new, :create]
+  resources :events, :only => [:new,  :create]
   root 'welcome#index'
   get  'addreq' =>'welcome#addreq'
 
