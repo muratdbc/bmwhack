@@ -10,26 +10,34 @@
             <h1>Set Up</h1>
           </div>
           <div >
-            <div class="col-sm-2 col-sm-offset-4">
-              <div data-role="fieldcontain">
-                <label for="name">Set the Speed:</label>
-                <input type="text" name="speed" id="speed" value=""  />
+            <%= form_for :event, url: events_path do |f| %>
+              <div class="col-sm-2 col-sm-offset-4">
+                <div data-role="fieldcontain">
+                  <%= f.label :max_speed %>
+                  <%= f.text_field :max_speed %>
+
+<!--                   <label for="name">Set the Speed:</label>
+                  <input type="text" name="speed" id="speed" value=""  />
+ -->                </div>
               </div>
-            </div>
-            <div class="col-sm-10">
-              <label for="select-choice-0" class="select">
-                Reach me</label>
-                <select name="select-choice-0" id="select-choice-0">
-                  <option value="speedlimit">Send Push Notifications</option>
-                  <option value="speedlimit">Send Text Message</option>
-                  <option value="speedlimit">Call me</option>
-                </select>
-                <div >
-                  <div class="col-sm-2 col-sm-offset-4">
-                    <a href="firstpage.html" class="ui-btn ui-btn-inline">Save Now</a>
+              <div class="col-sm-10">
+                <%= f.label :notification_id %>
+                <%= f.collection_select :notification_id, Notification.order(:method),:id,:method, include_blank: true %>
+                <!-- <label for="select-choice-0" class="select">
+                  Reach me</label>
+                  <select name="select-choice-0" id="select-choice-0">
+                    <option value="speedlimit">Send Push Notifications</option>
+                    <option value="speedlimit">Send Text Message</option>
+                    <option value="speedlimit">Call me</option>
+                  </select> -->
+                  <div >
+                    <div class="col-sm-2 col-sm-offset-4">
+                      <!-- <a href="firstpage.html" class="ui-btn ui-btn-inline">Save Now</a> -->
+                      <%= f.submit %>
+                    </div>
                   </div>
                 </div>
-              </div>
+            <% end %>
             </div>
          </div>
        </div>
